@@ -9,6 +9,6 @@ var animalsServices = angular.module('animalsServices', ['ngResource']);
 
 animalsServices.factory('Animal', ['$resource', function($resource){
 	return $resource('animals/:animalId.json', {}, {
-		query: {method:'GET', params:{phoneId:'phones'}, isArray:true}
+		query: {method:'GET', params:{animalId:'animals'}, isArray:true}
 	});
 }]);
