@@ -3,9 +3,9 @@
 /* Directives */
 
 
-angular.module('animalsDirectives', []).
-  directive('appVersion', ['version', function(version) {
-    return function(scope, elm, attrs) {
-      elm.text(version);
-    };
-  }]);
+var animalsDirectives = angular.module('animalsDirectives', []);
+animalsDirectives.directive('appVersion', ['version', function(version) {
+	return function(scope, elm, attrs) {
+	  elm.text(version);
+	};
+}]);

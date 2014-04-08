@@ -1,0 +1,21 @@
+[
+	{
+		"id": "dogs",
+		"name": "Dogs",
+		"lines":["Youve got to be able to pick up the easy meat.",
+				"Move down south, bury your head in the sand.",
+				"Just a sad old man, living all alone and dying of cancer."
+				],
+		"imageUrl": "https://images.encyclopediadramatica.es/2/24/Doge-original.jpg"
+	},
+	{
+		"id": "pigs",
+		"name": "Pigs (Three Different Ones)",
+		"lines":["Big man, pig man, ha ha charade you are.",
+				"You like the feel of steel, youre hot stuff with a hat pin.",
+				" . . . And good fun with a hand gun.",
+				"Mary, youre nearly a treat, but youre really a cry."
+				],
+		"imageUrl": "http://beyond-school.org/wp-content/uploads/2010/07/3145162135_81ff05f820_o-e1277975172901.jpg"
+	}
+]
