@@ -39,4 +39,14 @@ describe('my app', function() {
     });
 
   });
+
+  describe('animals', function() {
+    beforeEach(function(){
+      browser.get('index.html#/animals');
+    });
+
+    it('should give both animals', function(){
+      expect(element(by.css(".animal-entry p.name")).getText()).toMatch(/Dogs/);
+    });
+  });
 });

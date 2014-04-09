@@ -1,6 +1,11 @@
 <div>
 	<h1>Animals!</h1>
+	<input ng-model="query">
 	<ul>
-		<li ng-repeat="animal in animals">{{animal.name}}</li>	
+		<li class="animal-entry" ng-repeat="animal in animals | filter:query">
+			<p class='name'>{{animal.name}}</p>
+			<p class='lyric'>{{ animal.lines | firstLine }}<p>
+			<img class="animal-pic" ng-src="{{animal.imageUrl}}">
+		</li>	
 	</ul>
 </div>

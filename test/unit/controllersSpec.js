@@ -40,6 +40,7 @@ describe('animals animalsControllers', function(){
       _$httpBackend_.expectGET('animals/animals.json').respond([{name:"Dogs"},{name:"Pigs (Three Different Ones)"}]);
       var scope = $rootScope.$new();
       var aniCtrl = $controller('AnimalsCtrl', {$scope: scope})
+      expect(scope.animals).toEqualData([]);
       _$httpBackend_.flush();
       expect(scope.animals).toEqualData(animalsResponse);
     }));
