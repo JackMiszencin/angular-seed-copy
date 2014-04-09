@@ -49,4 +49,14 @@ describe('my app', function() {
       expect(element(by.css(".animal-entry p.name")).getText()).toMatch(/Dogs/);
     });
   });
+
+  describe('animal', function() {
+    beforeEach(function(){
+      browser.get('index.html#/animals/dogs');
+    });
+
+    it('should give me dogs title', function(){
+      expect(element(by.css("h1#name-header")).getText()).toBe("Dogs");
+    });
+  });
 });
